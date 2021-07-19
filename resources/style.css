@@ -1,0 +1,185 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Color Styles
+  4. Structural Styles
+  5. Sitewide Styles
+  6. Component Styles
+  7. Page Styles
+======================================== */
+
+
+/* 1. Global Styles
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* 2. Typography Styles
+======================================== */
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-Size: 15px;
+    color: black;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Merriweather', serif;    
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+
+
+/* 3. Color Styles
+======================================== */
+:root {
+    --primary: #25274d;
+    --primarylight: #2e9cca;
+    --secondary: #29648a;
+    --cta: #7a2048;
+}
+
+
+/*4. Structural Styles
+======================================== */
+section {
+  margin: 2rem;
+}
+
+
+
+/* 5. Sitewide Styles
+======================================== */
+
+/* ||Navigation menu---------------------*/
+
+/* Style the navigation menu */
+.menu {
+    overflow: hidden;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  #mylinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .menu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .menu a.icon {
+    background: var(--primarylight);
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a hover */
+  .menu a:hover {
+    background-color: var(--secondary);
+    color: white;
+  }
+
+  .logo a:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .logo {
+      height: 50px;
+  }
+
+  .logo img {
+      width: 64px;
+      margin-top: -20px;
+      padding-bottom: 50px;
+  }
+
+
+/* ||Footer---------------------*/
+
+
+  
+
+/* 6. Component Styles
+======================================== */
+img {
+    width: 100%;
+}
+
+
+/* 7. Page Styles
+======================================== */
+
+
+/* ||main banner----------------------------- */
+.hero {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 54px 0 ;   
+  width: 100%;
+  background: linear-gradient(rgba(55, 140, 177, 0.5),rgba(250, 250, 250, 0.986)), 
+              url(/KBT/resources/media/Mobile\ page\ hero.jpg)
+              no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.page-content {
+    height: 500px;
+    width: 100%;    
+    background-color: var(--primary);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    
+}
+
+.hero-heading {  
+  display: flex;
+  flex-flow: column;
+  justify-content:center;
+  align-items: center;  
+  height: 240px;
+  width: 100%;
+  color: var(--primarylight);
+  padding-top: 2rem;
+  padding-left: 6rem;
+}
+
+.hero-heading span {
+  color: white
+}
+
+hero-subheading {
+  color: var(--secondary);
+}
+
+
+/* ||section introduction----------------------- */
+
