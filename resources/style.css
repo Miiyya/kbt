@@ -42,9 +42,9 @@ h1 {
 /* 3. Color Styles
 ======================================== */
 :root {
-    --primary: #25274d;
-    --primarylight: #2e9cca;
-    --secondary: #29648a;
+    --primary: #162d50;
+    --primarylight: #5f8dd3;
+    --secondary: #214478;
     --cta: #7a2048;
 }
 
@@ -139,37 +139,36 @@ img {
 .hero {
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   margin: 54px 0 ;   
   width: 100%;
-  background: linear-gradient(rgba(55, 140, 177, 0.5),rgba(250, 250, 250, 0.986)), 
+  background: linear-gradient( to bottom left, rgba(095, 141, 211, 0.7),rgba(095, 141, 211, 0.4)), 
               url(/KBT/resources/media/Mobile\ page\ hero.jpg)
               no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom right;
 
 }
 
-
-.page-content {
-    height: 500px;
-    width: 100%;    
-    background-color: var(--primary);
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
-    
-}
-
-.hero-heading {  
+.page-hero {  
+  background: url(/KBT/resources/media/navy\ wawes-1.svg)
+              no-repeat;
   display: flex;
   flex-flow: column;
-  justify-content:center;
+  justify-content:flex-start;
   align-items: center;  
-  height: 240px;
+  height: 800px;
   width: 100%;
   color: var(--primarylight);
+  margin-top: -0.5rem;
   padding-top: 2rem;
   padding-left: 6rem;
+}
+
+.hero-heading {
+  padding-top: 8rem;
+  padding-bottom: 0.5rem;
 }
 
 .hero-heading span {
@@ -178,6 +177,7 @@ img {
 
 hero-subheading {
   color: var(--secondary);
+  font-size: 8rem;
 }
 
 
