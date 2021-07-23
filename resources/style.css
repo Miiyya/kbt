@@ -23,7 +23,7 @@
 ======================================== */
 html {
     font-family: 'Noto Sans JP', sans-serif;
-    font-Size: 15px;
+    font-Size: 14px;
     color: black;
 }
 
@@ -34,7 +34,7 @@ h3 {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 
@@ -45,7 +45,7 @@ h1 {
     --primary: #162d50;
     --primarylight: #5f8dd3;
     --secondary: #214478;
-    --cta: #7a2048;
+    --cta: #501622;
 }
 
 
@@ -64,6 +64,8 @@ section {
 
 /* Style the navigation menu */
 .menu {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     background-color: var(--primary);
     position: fixed;
@@ -130,6 +132,50 @@ img {
     width: 100%;
 }
 
+/* ||Buttons------------------------------*/
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8rem;
+  height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;   
+
+  color: white;
+  border-radius: 2rem;
+  border: 0.05rem solid var(--cta);
+  box-shadow: 0 0.15rem #2e191d;
+
+  transition: background-color 0.3s ease-out;
+
+}
+
+
+.button:hover {
+  margin-top: 2.15rem;
+  box-shadow: none;
+  background-color: var(--primarylight);
+}
+
+.button:active {
+  margin-top: 2.15rem;
+  box-shadow: inset 0.15rem 0.15rem 0.15rem  var(--secondary);
+  color: white
+}
+
+
+.primary-button {
+  background-color: var(--cta);
+}
+
 
 /* 7. Page Styles
 ======================================== */
@@ -139,9 +185,9 @@ img {
 .hero {
 
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 54px 0 ;   
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 ;   
   width: 100%;
   background: linear-gradient( to bottom left, rgba(095, 141, 211, 0.7),rgba(095, 141, 211, 0.4)), 
               url(/KBT/resources/media/Mobile\ page\ hero.jpg)
@@ -154,30 +200,32 @@ img {
 .page-hero {  
   background: url(/KBT/resources/media/navy\ wawes-1.svg)
               no-repeat;
+  
+  background-size: contain;         
+  background-position: top right;     
   display: flex;
   flex-flow: column;
   justify-content:flex-start;
   align-items: center;  
-  height: 800px;
+  height: 42rem;
   width: 100%;
-  color: var(--primarylight);
-  margin-top: -0.5rem;
-  padding-top: 2rem;
-  padding-left: 6rem;
 }
 
 .hero-heading {
-  padding-top: 8rem;
+  color: white;
+  padding-top: 3rem;
   padding-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .hero-heading span {
-  color: white
+  color: var(--primarylight);
+  font-size: 1.5rem;
 }
 
-hero-subheading {
-  color: var(--secondary);
-  font-size: 8rem;
+.hero-subheading {
+  color: white;
+  font-size: 1.1rem;
 }
 
 
