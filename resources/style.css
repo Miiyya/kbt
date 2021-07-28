@@ -34,9 +34,21 @@ h3 {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
+
+.main-heading {
+  color: var(--primary);
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.subheading {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  padding-bottom: 1.5rem;
+}
 
 
 /* 3. Color Styles
@@ -51,9 +63,6 @@ h1 {
 
 /*4. Structural Styles
 ======================================== */
-section {
-  margin: 2rem;
-}
 
 
 
@@ -180,6 +189,14 @@ img {
 /* 7. Page Styles
 ======================================== */
 
+main {
+  
+  background: linear-gradient( to bottom left, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.637)), 
+              url(/KBT/resources/media/Mobile-merak5.png)
+              no-repeat fixed;
+  background-size: cover;
+}
+
 
 /* ||main banner----------------------------- */
 .hero {
@@ -187,27 +204,22 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 ;   
+  margin-top: 50px;
   width: 100%;
-  background: linear-gradient( to bottom left, rgba(095, 141, 211, 0.7),rgba(095, 141, 211, 0.4)), 
-              url(/KBT/resources/media/Mobile\ page\ hero.jpg)
-              no-repeat;
-  background-size: cover;
-  background-position: bottom right;
 
 }
 
 .page-hero {  
-  background: url(/KBT/resources/media/navy\ wawes-1.svg)
+  background: url(/KBT/resources/media/navy\ wawes-2.svg)
               no-repeat;
   
-  background-size: contain;         
+  background-size: cover;         
   background-position: top right;     
   display: flex;
   flex-flow: column;
   justify-content:flex-start;
   align-items: center;  
-  height: 42rem;
+  height: 45rem;
   width: 100%;
 }
 
@@ -231,3 +243,11 @@ img {
 
 /* ||section introduction----------------------- */
 
+.introduction {
+  margin: -5rem 2rem 5rem 0;
+  border-radius: 0 3rem 3rem 0;
+  background-color: white;
+  opacity: 0.9;
+  padding: 3rem;
+}
+; 
