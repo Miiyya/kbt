@@ -48,6 +48,7 @@ h1 {
   color: var(--secondary);
   font-size: 1.1rem;
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 
@@ -63,6 +64,27 @@ h1 {
 
 /*4. Structural Styles
 ======================================== */
+.left-section-box {  
+  border-left: none;
+  border-radius: 0 3rem 3rem 0;
+  padding: 3rem;
+  background: #5f8dd323;
+  box-shadow: 0 5px 10px 0 var(--secondary);
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 4.0px );
+}
+
+.right-section-box {
+  
+  margin: 5rem 0 5rem 2rem;
+  border-left: none;
+  border-radius: 3rem 0 0 3rem;
+  padding: 3rem;
+  background: #5f8dd323;
+  box-shadow: 0 5px 10px 0 var(--secondary);
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 4.0px );
+}
 
 
 
@@ -185,6 +207,11 @@ img {
   background-color: var(--cta);
 }
 
+.secondary-button {
+  background-color: var(--cta);
+}
+
+
 
 /* 7. Page Styles
 ======================================== */
@@ -204,7 +231,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 3.5rem;
   width: 100%;
 
 }
@@ -219,7 +246,7 @@ main {
   flex-flow: column;
   justify-content:flex-start;
   align-items: center;  
-  height: 45rem;
+  height: 48rem;
   width: 100%;
 }
 
@@ -244,10 +271,23 @@ main {
 /* ||section introduction----------------------- */
 
 .introduction {
-  margin: -5rem 2rem 5rem 0;
-  border-radius: 0 3rem 3rem 0;
-  background-color: white;
-  opacity: 0.9;
-  padding: 3rem;
+  margin: -6rem 2rem 0 0;
 }
-; 
+ 
+
+/* ||section services----------------------- */
+
+
+
+.infobox {
+  margin: 2rem ;
+  border-left: none;
+  border-radius: 3rem;
+  padding: 3rem;
+  background: #5f8dd325;
+  box-shadow: 0 5px 10px 0 var(--secondary);
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 4.0px );
+
+}
+ 
