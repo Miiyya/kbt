@@ -64,27 +64,6 @@ h1 {
 
 /*4. Structural Styles
 ======================================== */
-.left-section-box {  
-  border-left: none;
-  border-radius: 0 3rem 3rem 0;
-  padding: 3rem;
-  background: #5f8dd323;
-  box-shadow: 0 5px 10px 0 var(--secondary);
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 4.0px );
-}
-
-.right-section-box {
-  
-  margin: 5rem 0 5rem 2rem;
-  border-left: none;
-  border-radius: 3rem 0 0 3rem;
-  padding: 3rem;
-  background: #5f8dd323;
-  box-shadow: 0 5px 10px 0 var(--secondary);
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 4.0px );
-}
 
 
 
@@ -216,17 +195,15 @@ img {
 /* 7. Page Styles
 ======================================== */
 
-main {
+
+
+/* ||main banner----------------------------- */
+.hero {
   
   background: linear-gradient( to bottom left, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.637)), 
               url(/KBT/resources/media/Mobile-merak5.png)
               no-repeat fixed;
   background-size: cover;
-}
-
-
-/* ||main banner----------------------------- */
-.hero {
 
   display: flex;
   justify-content: center;
@@ -267,27 +244,27 @@ main {
   font-size: 1.1rem;
 }
 
+/* ||section divider----------------------------- */
+
 
 /* ||section introduction----------------------- */
 
 .introduction {
-  margin: -6rem 2rem 0 0;
+  margin: 2rem 0;
 }
  
 
 /* ||section services----------------------- */
 
-
+.services {
+  margin-top: 5rem;
+}
+.infoboxes {
+  width: 100%;
+}
 
 .infobox {
-  margin: 2rem ;
-  border-left: none;
-  border-radius: 3rem;
-  padding: 3rem;
-  background: #5f8dd325;
-  box-shadow: 0 5px 10px 0 var(--secondary);
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 4.0px );
+  padding: 1rem;
 
 }
  
